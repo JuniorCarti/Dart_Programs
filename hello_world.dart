@@ -1,5 +1,9 @@
 void main() {
   print('Hello, World!');
+  int a = 10;
+  int b = 5;
+  print('Sum: ${a + b}');
+  print('Product: ${a * b}');
 }
 
 //void: A return type. It tells Dart that this function does not return anything.
@@ -11,4 +15,8 @@ void main() {
 // This is a simple Dart program that prints "Hello, World!" to the console.
 //{: The opening brace starts the body of the function.
 //🧠 Think of main() like the front door of your program — execution begins here.
+
+
+
+
 
