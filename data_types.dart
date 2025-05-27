@@ -36,6 +36,8 @@ Map<String, int> ages = {
 // set of strings
 Set<String> uniqueFruits = {"Apple", "Banana", "Cherry"};
 // runes for special characters
+//Unicode Characters
+//Stores Unicode values (emojis, special symbols).
 var heart = '\u2665'; // Heart symbol
 var smiley = '\u263A'; // Smiley face symbol
 var coffee = '\u2615'; // Coffee cup symbol
