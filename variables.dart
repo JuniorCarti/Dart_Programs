@@ -16,6 +16,7 @@ void main() {
   // Printing variables
   print("Name: $name");
   print("Age: $age");
+  print("ID: $id");
   print("Height: $height");
   print("Is Student: $isStudent");
 
