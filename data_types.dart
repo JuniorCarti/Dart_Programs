@@ -15,5 +15,8 @@ double differenceDouble = x - y; // differenceDouble is 3.5
 double productDouble = x * y; // productDouble is 11.0
 double quotientDouble = x / y; // quotientDouble is 2.75
 double remainderDouble = x % y; // remainderDouble is 1.5
+// boolean values
+bool isTrue = true;
+bool isFalse = false;
 
 
