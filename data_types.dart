@@ -47,6 +47,9 @@ var star = '\u2605'; // Star symbol
 //Used for special characters in Dart.
 var dollarSign = '\$'; // Dollar sign
 var percentSign = '%'; // Percent sign
+var ampersand = '&'; // Ampersand
+var atSign = '@'; // At sign
+var hashSign = '#'; // Hash sign
 
 
 
