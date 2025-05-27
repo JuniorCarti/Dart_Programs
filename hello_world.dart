@@ -9,4 +9,6 @@ void main() {
 // 'Hello, World!': A string literal. It is the text that will be printed to the console.
 // ;: A semicolon. It indicates the end of a statement in Dart.
 // This is a simple Dart program that prints "Hello, World!" to the console.
+//{: The opening brace starts the body of the function.
+//🧠 Think of main() like the front door of your program — execution begins here.
 
