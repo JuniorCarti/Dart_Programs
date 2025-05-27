@@ -33,5 +33,9 @@ Map<String, int> ages = {
   "Bob": 25,
   "Charlie": 35
 };
+// set of strings
+Set<String> uniqueFruits = {"Apple", "Banana", "Cherry"};
+// runes for special characters
+var heart = '\u2665'; // Heart symbol
 
 
