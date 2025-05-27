@@ -6,6 +6,12 @@ void main() {
   print('Product: ${a * b}');
   String userName = 'Faith';
   print('Welcome, $userName! Please insert your ATM card.');
+  // This is a comment explaining the code below
+  if (a > b) {
+    print('$a is greater than $b');
+  } else {
+    print('$b is greater than or equal to $a');
+  }
 }
 
 //void: A return type. It tells Dart that this function does not return anything.
