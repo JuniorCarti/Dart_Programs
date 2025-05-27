@@ -43,5 +43,10 @@ var smiley = '\u263A'; // Smiley face symbol
 var coffee = '\u2615'; // Coffee cup symbol
 var checkMark = '\u2714'; // Check mark symbol
 var star = '\u2605'; // Star symbol
+//symbols
+//Used for special characters in Dart.
+var dollarSign = '\$'; // Dollar sign
+var percentSign = '%'; // Percent sign
+
 
 
