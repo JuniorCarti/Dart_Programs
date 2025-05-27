@@ -23,5 +23,8 @@ bool isFalse = false;
 String greeting = "Hello, World!";
 String name = "Alice";
 String message = "Welcome to Dart programming!";
-
+// list of integers
+List<int> numbers = [1, 2, 3, 4, 5];
+// list of strings
+List<String> fruits = ["Apple", "Banana", "Cherry"];
 
