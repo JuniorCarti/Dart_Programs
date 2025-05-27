@@ -4,6 +4,8 @@ void main() {
   int b = 5;
   print('Sum: ${a + b}');
   print('Product: ${a * b}');
+  String userName = 'Faith';
+  print('Welcome, $userName! Please insert your ATM card.');
 }
 
 //void: A return type. It tells Dart that this function does not return anything.
