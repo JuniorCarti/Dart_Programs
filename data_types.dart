@@ -19,4 +19,9 @@ double remainderDouble = x % y; // remainderDouble is 1.5
 bool isTrue = true;
 bool isFalse = false;
 
+// string values
+String greeting = "Hello, World!";
+String name = "Alice";
+String message = "Welcome to Dart programming!";
+
 
