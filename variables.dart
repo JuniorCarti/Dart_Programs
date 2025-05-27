@@ -1,12 +1,17 @@
 //variables in dart
 void main() {
   // Declaring variables
-  int age = 25; // Integer variable
-  double height = 5.9; // Double variable
-  String name = "Alice"; // String variable
-  bool isStudent = true; // Boolean variable
-  final String country = "USA"; // Final variable (constant)
-  //note that final variables cannot be changed after they are set
+  int age = 25;
+  int id = 3614632;
+  double height = 5.9;
+  String name = "Ridge";
+  String county = "Eldoret";
+  String hobby = "Coding";
+  String favoriteTeam = "Manchester City";
+
+
+  bool isStudent = true;
+  final String country = "Kenya";
 
   // Printing variables
   print("Name: $name");
@@ -17,5 +22,9 @@ void main() {
   // Changing the value of a variable
   age = 26;
   print("Updated Age: $age");
-  
+  //strings can be concatenated
+  String greeting = "Hello, " + name + "! You are from " + country + ". " + 
+ "And your current location is " + county + "." + " Your favorite hobby is " + 
+  hobby + " and you support " + favoriteTeam + ".";
+  print(greeting);
 }
