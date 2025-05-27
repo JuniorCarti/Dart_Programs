@@ -27,4 +27,11 @@ String message = "Welcome to Dart programming!";
 List<int> numbers = [1, 2, 3, 4, 5];
 // list of strings
 List<String> fruits = ["Apple", "Banana", "Cherry"];
+// map of string to integer
+Map<String, int> ages = {
+  "Alice": 30,
+  "Bob": 25,
+  "Charlie": 35
+};
+
 
