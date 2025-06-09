@@ -21,3 +21,13 @@ mixin Auditable {
     print('Audit: $action at ${DateTime.now()}');
   }
 }
+mixin Validatable {
+  bool validate(String input) {
+    if (input.isEmpty) {
+      print('Validation failed: Input cannot be empty.');
+      return false;
+    }
+    print('Validation passed for input: $input');
+    return true;
+  }
+}
