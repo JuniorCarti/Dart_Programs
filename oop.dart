@@ -38,4 +38,14 @@ class Dog extends Animal {
     print('$name barks.');
   }
 }
+class Cat extends Animal {
+  // Constructor
+  Cat(String name, int age) : super(name, age);
+
+  // Overriding the speak method
+  @override
+  void speak() {
+    print('$name meows.');
+  }
+}
 
