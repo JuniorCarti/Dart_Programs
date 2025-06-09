@@ -31,3 +31,32 @@ class Person {
 
   Person(this._name, this._age);
 }
+void main() {
+  // Creating a Person object
+  Person person = Person('Alice', 30);
+
+  // Accessing properties using getters
+  print('Name: ${person.name}'); // Output: Name: Alice
+  print('Age: ${person.age}');   // Output: Age: 30
+
+  // Modifying properties using setters
+  person.name = 'Bob';
+  person.age = 25;
+
+  print('Updated Name: ${person.name}'); // Output: Updated Name: Bob
+  print('Updated Age: ${person.age}');   // Output: Updated Age: 25
+
+  // Attempting to set invalid values
+  try {
+    person.name = ''; // Throws an error
+  } catch (e) {
+    print(e); // Output: Name cannot be empty
+  }
+
+  try {
+    person.age = -5; // Throws an error
+  } catch (e) {
+    print(e); // Output: Age cannot be negative
+  }
+}
+
