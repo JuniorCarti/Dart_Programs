@@ -40,3 +40,12 @@ class BankAccount {
     return _balance;
   }
 }
+void main() {
+  // Creating a BankAccount object
+  BankAccount account = BankAccount('123456789', 1000.0);
+  // Depositing money
+  account.deposit(200.0); // Output: Deposited: $200.00
+  // Withdrawing money
+  account.withdraw(150.0); // Output: Withdrew: $150.00
+  // Checking balance
+  print('Current Balance: \$${account.getBalance().toStringAsFixed(2)}'); // Output: Current Balance: $1050.00
