@@ -17,3 +17,16 @@ class Vehicle {
     print('Brand: $brand, Year: $year');
   }
 }
+class Car extends Vehicle {
+  int numberOfDoors;
+
+  // Constructor
+  Car(String brand, int year, this.numberOfDoors) : super(brand, year);
+
+  // Overriding the displayInfo method
+  @override
+  void displayInfo() {
+    super.displayInfo();
+    print('Number of Doors: $numberOfDoors');
+  }
+}
