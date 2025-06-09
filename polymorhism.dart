@@ -49,3 +49,4 @@ void main() {
   Shape rectangle = Rectangle(4.0, 6.0);
   print('Area of Rectangle: ${rectangle.area()}'); // Output: Area of Rectangle: 24.0
 }
+
