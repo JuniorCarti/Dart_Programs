@@ -14,7 +14,7 @@ void main() {
   }
 }
 
-//void: A return type. It tells Dart that this function does not return anything.
+//void: A return type. It tells Dart that this function does not return anything
 // main: The name of the function. Dart programs start executing from the main function.
 // (): Parentheses. They indicate that this is a function.
 // print: A built-in function that outputs text to the console.
