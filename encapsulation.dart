@@ -1,11 +1,11 @@
 //encapsulation.dart
 // This file demonstrates encapsulation in Dart.
-// Encapsulation is a fundamental concept in object-oriented programming 
+// Encapsulation is a fundamental concept in object-oriented programming
 //that restricts direct access to an object's data and methods.
 // It allows you to control how the data is accessed and modified,
 // promoting data integrity and security.
 // In Dart, encapsulation is achieved using classes and access modifiers.
-// The following code snippet illustrates encapsulation by defining 
+// The following code snippet illustrates encapsulation by defining
 //a class with private fields and public methods.
 class BankAccount {
   // Private fields
@@ -40,6 +40,7 @@ class BankAccount {
     return _balance;
   }
 }
+
 void main() {
   // Creating a BankAccount object
   BankAccount account = BankAccount('123456789', 1000.0);
@@ -48,15 +49,23 @@ void main() {
   // Withdrawing money
   account.withdraw(150.0); // Output: Withdrew: $150.00
   // Checking balance
-  print('Current Balance: \$${account.getBalance().toStringAsFixed(2)}'); // Output: Current Balance: $1050.00
+  print(
+    'Current Balance: \$${account.getBalance().toStringAsFixed(2)}',
+  ); // Output: Current Balance: $1050.00
   // Attempting to access private fields directly (will result in an error)
   // print(account._balance); // Uncommenting this line will cause an error
   // Attempting to withdraw more than the balance
-  account.withdraw(2000.0); // Output: Insufficient balance or invalid withdrawal amount.
+  account.withdraw(
+    2000.0,
+  ); // Output: Insufficient balance or invalid withdrawal amount.
   // Attempting to deposit a negative amount
   account.deposit(-50.0); // Output: Deposit amount must be positive.
   // Attempting to withdraw a negative amount
-  account.withdraw(-100.0); // Output: Insufficient balance or invalid withdrawal amount.
+  account.withdraw(
+    -100.0,
+  ); // Output: Insufficient balance or invalid withdrawal amount.
   // Attempting to check balance
-  print('Final Balance: \$${account.getBalance().toStringAsFixed(2)}'); // Output: Final Balance: $1050.00
-  // Attempting to access private fields directly (will result in an error)
+  print(
+    'Final Balance: \$${account.getBalance().toStringAsFixed(2)}',
+  ); // Output: Final Balance: $1050.00
+}
