@@ -3,3 +3,6 @@
 //as a modern programming language, has robust support for OOP concepts.
 // In this code snippet, we will explore the basic concepts of OOP in Dart, 
 //including classes, objects, inheritance, and polymorphism.
+//// This code snippet demonstrates the principles of OOP in Dart.
+//1. Classes and Objects
+
