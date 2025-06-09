@@ -5,3 +5,5 @@
 // It allows you to control how the data is accessed and modified,
 // promoting data integrity and security.
 // In Dart, encapsulation is achieved using classes and access modifiers.
+// The following code snippet illustrates encapsulation by defining 
+//a class with private fields and public methods.
