@@ -29,5 +29,18 @@ class Cat extends
     print('Meow Meow!');
   }
 }
+void main() {
+  // Creating objects of Dog and Cat classes
+  Animal dog = Dog();
+  Animal cat = Cat();
+
+  // Calling the makeSound method
+  dog.makeSound(); // Output: Woof Woof!
+  cat.makeSound(); // Output: Meow Meow!
+
+  // Calling the sleep method
+  dog.sleep(); // Output: Sleeping...
+  cat.sleep(); // Output: Sleeping...
+}
 
 
