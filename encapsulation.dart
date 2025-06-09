@@ -49,3 +49,8 @@ void main() {
   account.withdraw(150.0); // Output: Withdrew: $150.00
   // Checking balance
   print('Current Balance: \$${account.getBalance().toStringAsFixed(2)}'); // Output: Current Balance: $1050.00
+  // Attempting to access private fields directly (will result in an error)
+  // print(account._balance); // Uncommenting this line will cause an error
+  // Attempting to withdraw more than the balance
+  account.withdraw(2000.0); // Output: Insufficient balance or invalid withdrawal amount.
+  // Attempting to deposit a negative amount
