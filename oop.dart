@@ -5,4 +5,16 @@
 //including classes, objects, inheritance, and polymorphism.
 //// This code snippet demonstrates the principles of OOP in Dart.
 //1. Classes and Objects
+class Animal {
+  String name;
+  int age;
+
+  // Constructor
+  Animal(this.name, this.age);
+
+  // Method
+  void speak() {
+    print('$name makes a sound.');
+  }
+}
 
