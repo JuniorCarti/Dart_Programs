@@ -4,4 +4,30 @@
 //allows you to hide complex implementation details
 // and expose only the necessary parts of an object.
 // In Dart, abstraction can be achieved using abstract classes and interfaces.
+abstract class Animal {
+  // Abstract method (does not have an implementation)
+  void makeSound();
+
+  // Concrete method
+  void sleep() {
+    print('Sleeping...');
+  }
+}
+class Dog extends
+    Animal {
+  // Implementing the abstract method
+  @override
+  void makeSound() {
+    print('Woof Woof!');
+  }
+}
+class Cat extends
+    Animal {
+  // Implementing the abstract method
+  @override
+  void makeSound() {
+    print('Meow Meow!');
+  }
+}
+
 
