@@ -57,3 +57,6 @@ void main() {
   account.deposit(-50.0); // Output: Deposit amount must be positive.
   // Attempting to withdraw a negative amount
   account.withdraw(-100.0); // Output: Insufficient balance or invalid withdrawal amount.
+  // Attempting to check balance
+  print('Final Balance: \$${account.getBalance().toStringAsFixed(2)}'); // Output: Final Balance: $1050.00
+  // Attempting to access private fields directly (will result in an error)
