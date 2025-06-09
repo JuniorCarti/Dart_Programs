@@ -54,3 +54,6 @@ void main() {
   // Attempting to withdraw more than the balance
   account.withdraw(2000.0); // Output: Insufficient balance or invalid withdrawal amount.
   // Attempting to deposit a negative amount
+  account.deposit(-50.0); // Output: Deposit amount must be positive.
+  // Attempting to withdraw a negative amount
+  account.withdraw(-100.0); // Output: Insufficient balance or invalid withdrawal amount.
