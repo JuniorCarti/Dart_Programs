@@ -16,3 +16,8 @@ mixin ErrorHandler {
     print('Error: $error at ${DateTime.now()}');
   }
 }
+mixin Auditable {
+  void audit(String action) {
+    print('Audit: $action at ${DateTime.now()}');
+  }
+}
