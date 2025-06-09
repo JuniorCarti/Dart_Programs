@@ -8,3 +8,11 @@ mixin Logger {
     print('Log: $message');
   }
 }
+mixin Timestamped {
+  String get timestamp => DateTime.now().toIso8601String();
+}
+mixin ErrorHandler {
+  void handleError(String error) {
+    print('Error: $error at ${DateTime.now()}');
+  }
+}
