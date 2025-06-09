@@ -17,7 +17,8 @@ class Animal {
     print('$name makes a sound.');
   }
 }
-void main() {
+// Example usage of Animal class
+void animalExample() {
   // Creating an object of the Animal class
   Animal dog = Animal('Dog', 5);
   dog.speak(); // Output: Dog makes a sound.
