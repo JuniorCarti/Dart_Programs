@@ -17,4 +17,13 @@ class Animal {
     print('$name makes a sound.');
   }
 }
+void main() {
+  // Creating an object of the Animal class
+  Animal dog = Animal('Dog', 5);
+  dog.speak(); // Output: Dog makes a sound.
+
+  // Creating another object of the Animal class
+  Animal cat = Animal('Cat', 3);
+  cat.speak(); // Output: Cat makes a sound.
+}
 
