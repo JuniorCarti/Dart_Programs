@@ -48,4 +48,14 @@ class Cat extends Animal {
     print('$name meows.');
   }
 }
+void main() {
+  // Creating an object of the Dog class
+  Dog dog = Dog('Buddy', 4);
+  dog.speak(); // Output: Buddy barks.
+
+  // Creating an object of the Cat class
+  Cat cat = Cat('Whiskers', 2);
+  cat.speak(); // Output: Whiskers meows.
+}
+
 
