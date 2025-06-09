@@ -43,3 +43,12 @@ class Bike extends Vehicle {
     print('Type: $type');
   }
 }
+void main() {
+  // Creating a Car object
+  Car car = Car('Toyota', 2020, 4);
+  car.displayInfo(); // Output: Brand: Toyota, Year: 2020, Number of Doors: 4
+
+  // Creating a Bike object
+  Bike bike = Bike('Yamaha', 2019, 'Sport');
+  bike.displayInfo(); // Output: Brand: Yamaha, Year: 2019, Type: Sport
+}
