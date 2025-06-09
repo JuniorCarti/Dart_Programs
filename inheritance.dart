@@ -30,3 +30,16 @@ class Car extends Vehicle {
     print('Number of Doors: $numberOfDoors');
   }
 }
+class Bike extends Vehicle {
+  String type;
+
+  // Constructor
+  Bike(String brand, int year, this.type) : super(brand, year);
+
+  // Overriding the displayInfo method
+  @override
+  void displayInfo() {
+    super.displayInfo();
+    print('Type: $type');
+  }
+}
