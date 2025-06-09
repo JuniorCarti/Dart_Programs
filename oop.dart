@@ -27,6 +27,7 @@ void main() {
   cat.speak(); // Output: Cat makes a sound.
 }
 //2. Inheritance
+// Inheritance allows a class to inherit properties and methods from another class.
 class Dog extends Animal {
   // Constructor
   Dog(String name, int age) : super(name, age);
