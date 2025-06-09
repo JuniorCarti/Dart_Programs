@@ -7,5 +7,6 @@
 /// // The base class will define a method that can be overridden by the derived classes.
 /// // The derived classes will implement their own version of the method.
 /// // This allows us to call the same method on different objects and get different results.
-/// // The base class
+/// // The base class `Shape` will define a method `area()` that will be overridden by the derived classes.
+/// // The derived classes will implement their own version of the method.
 /// 
