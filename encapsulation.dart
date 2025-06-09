@@ -7,3 +7,36 @@
 // In Dart, encapsulation is achieved using classes and access modifiers.
 // The following code snippet illustrates encapsulation by defining 
 //a class with private fields and public methods.
+class BankAccount {
+  // Private fields
+  String _accountNumber;
+  double _balance;
+
+  // Constructor
+  BankAccount(this._accountNumber, this._balance);
+
+  // Public method to deposit money
+  void deposit(double amount) {
+    if (amount > 0) {
+      _balance += amount;
+      print('Deposited: \$${amount.toStringAsFixed(2)}');
+    } else {
+      print('Deposit amount must be positive.');
+    }
+  }
+
+  // Public method to withdraw money
+  void withdraw(double amount) {
+    if (amount > 0 && amount <= _balance) {
+      _balance -= amount;
+      print('Withdrew: \$${amount.toStringAsFixed(2)}');
+    } else {
+      print('Insufficient balance or invalid withdrawal amount.');
+    }
+  }
+
+  // Public method to check balance
+  double getBalance() {
+    return _balance;
+  }
+}
