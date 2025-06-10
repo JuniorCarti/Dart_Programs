@@ -40,4 +40,22 @@ class Laptop {
     print('Battery Life: $batteryLife hours');
     print('Touchscreen: ${isTouchscreen ? "Yes" : "No"}');
   }
+  void main() {
+    // Create an instance of the Laptop class
+    Laptop myLaptop = Laptop(
+      brand: 'Dell',
+      model: 'XPS 15',
+      processor: 'Intel Core i7',
+      ram: 16,
+      storage: 512,
+      graphicsCard: 'NVIDIA GeForce GTX 1650',
+      operatingSystem: 'Windows 10',
+      screenSize: 15.6,
+      batteryLife: 10,
+      isTouchscreen: false,
+    );
+
+    // Display the laptop details
+    myLaptop.displayDetails();
+  }
 }
