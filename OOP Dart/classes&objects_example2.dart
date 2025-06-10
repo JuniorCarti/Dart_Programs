@@ -23,5 +23,28 @@ class House {
   String zoningType; // e.g., residential, commercial, mixed-use
   String energyEfficiencyRating; // e.g., A, B, C, D
 
-  //c
+  //constructor to initialize all fields
+  House({
+    required this.address,
+    required this.numberOfRooms,
+    required this.area,
+    required this.type,
+    required this.owner,
+    required this.constructionYear,
+    required this.roofType,
+    required this.wallMaterial,
+    required this.flooringType,
+    required this.heatingSystem,
+    required this.coolingSystem,
+    required this.securityFeatures,
+    required this.gardenFeatures,
+    required this.garageType,
+    required this.exteriorFinish,
+    required this.interiorFinish,
+    required this.yearBuilt,
+    required this.numberOfFloors,
+    required this.utilities,
+    required this.zoningType,
+    required this.energyEfficiencyRating,
+  })
 }
