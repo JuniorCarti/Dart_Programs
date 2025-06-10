@@ -69,26 +69,29 @@ class Car {
     print('Year of Manufacture: $year');
 
   }
-  //creating objects
-  void main(){
-    // creating an object of the car class
-    Car myCar = Car(
-      name: 'Mercedes-Benz',
-      color: 'Red',
-      model: '2023',
-      brand: 'Mercedes',
-      owner: 'Ridge Junior',
-      registrationNumber: 'ABC1234',
-      engine: 'Electric',
-      transmission: 'Automatic',
-      fuelType: 'Electric',
-      chassisNumber: '1HGCM82633A123456',
-      wheelsAndTires: '18 inch alloy wheels',
-      interior: 'Leather seats, touchscreen display',
-      exterior: 'Sleek design, sunroof',
-      safetyFeatures: 'Airbags, ABS, Traction Control',
-      mileage: 15,
-      year: 2023,
-    );
-  }
+}
+
+//creating objects
+void main() {
+  // creating an object of the car class
+  Car myCar = Car(
+    name: 'Mercedes-Benz',
+    color: 'Red',
+    model: '2023',
+    brand: 'Mercedes',
+    owner: 'Ridge Junior',
+    registrationNumber: 'ABC1234',
+    engine: 'Electric',
+    transmission: 'Automatic',
+    fuelType: 'Electric',
+    chassisNumber: '1HGCM82633A123456',
+    wheelsAndTires: '18 inch alloy wheels',
+    interior: 'Leather seats, touchscreen display',
+    exterior: 'Sleek design, sunroof',
+    safetyFeatures: 'Airbags, ABS, Traction Control',
+    mileage: 15,
+    year: 2023,
+  );
+  //calling the method to display car details
+  myCar.displayDetails();
 }
