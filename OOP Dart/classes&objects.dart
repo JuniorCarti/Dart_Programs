@@ -95,3 +95,7 @@ void main() {
   //calling the method to display car details
   myCar.displayDetails();
 }
+// We define a Car class with a number of properties (brand, model, year) and one method (displayDetails()).
+//In main(), we create a Car object named myCar.
+//We set the properties of myCar using dot notation.
+//We call the displayDetails() method on myCar.
