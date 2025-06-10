@@ -37,7 +37,7 @@ class Course {
     Course myCourse = Course(
       courseName: 'Introduction to Dart Programming',
       courseCode: 'CS101',
-      instructor: 'Dr. Jane Doe',
+      instructor: 'Dr. Jane Kariuki',
       credits: 3,
       semester: 'Fall',
       isOnline: true,
