@@ -49,4 +49,24 @@ class Car {
     required this.mileage,
     required this.year,
   });
+  // Method to display car details
+  void displayDetails() {
+    print('Car Name: $name');
+    print('Color: $color');
+    print('Model: $model');
+    print('Brand: $brand');
+    print('Owner: $owner');
+    print('Registration Number: $registrationNumber');
+    print('Engine: $engine');
+    print('Transmission: $transmission');
+    print('Fuel Type: $fuelType');
+    print('Chassis Number: $chassisNumber');
+    print('Wheels and Tires: $wheelsAndTires');
+    print('Interior: $interior');
+    print('Exterior: $exterior');
+    print('Safety Features: $safetyFeatures');
+    print('Mileage: $mileage km/l');
+    print('Year of Manufacture: $year');
+
+  }
 }
