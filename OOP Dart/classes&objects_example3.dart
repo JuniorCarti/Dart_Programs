@@ -26,5 +26,16 @@ class LoginProfile {
     print('Last Login: $lastLogin');
     print('Active Status: ${isActive ? "Active" : "Inactive"}');
   }
-  
+// Creating an instance of the LoginProfile class and displaying its details
+  void main(){
+    // Create an instance of the LoginProfile class
+    LoginProfile profile = LoginProfile(
+      username: 'RidgeJunior',
+      password: 'securePassword123',
+      email: 'ridgejunior@gmail.com',
+      phoneNumber: '+254123456789',
+      lastLogin: DateTime.now(), // Current date and time using DateTime.now() that returns the current date and time
+      isActive: true,
+    );
+  }
 }
