@@ -31,5 +31,16 @@ class BankAccount {
       print('Deposit amount must be positive.');
     }
   }
+  //public method to withdraw money
+  void withdraw(double amount) {
+    if (amount > 0 && amount <= _balance) {
+      _balance -= amount;
+      print('Withdrew \$$amount. New balance: \$$_balance');
+    } else if (amount > _balance) {
+      print('Insufficient funds for withdrawal.');
+    } else {
+      print('Withdrawal amount must be positive.');
+    }
+  }
 
 }
