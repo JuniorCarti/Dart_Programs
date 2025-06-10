@@ -38,3 +38,32 @@ class Car {
     print('Brand: $brand');
   }
 }
+
+// Creating objects using the default and named constructors
+void main() {
+  // Creating an object using the default constructor
+  Car myCar = Car(
+    name: 'Model S',
+    color: 'Red',
+    model: '2023',
+    year: 2023,
+    brand: 'Tesla',
+  );
+
+  // Displaying car details
+  myCar.displayDetails();
+
+  // Creating an object using the named constructor for electric cars
+  Car myElectricCar = Car.electric(
+    name: 'Model X',
+    color: 'Blue',
+    model: '2023',
+    year: 2023,
+    brand: 'Tesla',
+  );
+
+  // Displaying electric car details
+  myElectricCar.displayDetails();
+  print('This is an electric car created using a named constructor.');
+}
+
