@@ -46,5 +46,60 @@ class House {
     required this.utilities,
     required this.zoningType,
     required this.energyEfficiencyRating,
-  })
+  });
+  //Method to display house details
+  void displayDetails() {
+    print('House Address: $address');
+    print('Number of Rooms: $numberOfRooms');
+    print('Area: $area square meters');
+    print('Type: $type');
+    print('Owner: $owner');
+    print('Construction Year: $constructionYear');
+    print('Roof Type: $roofType');
+    print('Wall Material: $wallMaterial');
+    print('Flooring Type: $flooringType');
+    print('Heating System: $heatingSystem');
+    print('Cooling System: $coolingSystem');
+    print('Security Features: $securityFeatures');
+    print('Garden Features: $gardenFeatures');
+    print('Garage Type: $garageType');
+    print('Exterior Finish: $exteriorFinish');
+    print('Interior Finish: $interiorFinish');
+    print('Year Built: $yearBuilt');
+    print('Number of Floors: $numberOfFloors');
+    print('Utilities: $utilities');
+    print('Zoning Type: $zoningType');
+    print('Energy Efficiency Rating: $energyEfficiencyRating');
+  }
+
+  //creating objects
+  void main() {
+    // Create an instance of the House class
+    House myHouse = House(
+      address: 'P.o Box 123, Nairobi, Kenya',
+      numberOfRooms: 4,
+      area: 150.0,
+      type: 'Villa',
+      owner: 'Robert Mwangi',
+      constructionYear: '2020',
+      roofType: 'Pitched',
+      wallMaterial: 'Brick',
+      flooringType: 'Hardwood',
+      heatingSystem: 'Central Heating',
+      coolingSystem: 'Air Conditioning',
+      securityFeatures: 'CCTV, Alarm System',
+      gardenFeatures: 'Lawn, Flower Beds',
+      garageType: 'Attached',
+      exteriorFinish: 'Paint',
+      interiorFinish: 'Wallpaper',
+      yearBuilt: 2020,
+      numberOfFloors: 2,
+      utilities: 'Electricity, Water, Gas, Internet',
+      zoningType: 'Residential',
+      energyEfficiencyRating: 'A',
+    );
+
+    // Display the details of the house
+    myHouse.displayDetails();
+  }
 }
