@@ -42,5 +42,19 @@ class BankAccount {
       print('Withdrawal amount must be positive.');
     }
   }
+  //public method to get balance
+  double getBalance() {
+    return _balance;
+  }
+  //public method to get account number
+  String getAccountNumber() {
+    return _accountNumber;
+  }
+  //public method to get owner name
+  String getOwnerName() {
+    return _0wnerName;
+  }
+  
+
 
 }
