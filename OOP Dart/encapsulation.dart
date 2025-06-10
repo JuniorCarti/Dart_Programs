@@ -54,7 +54,31 @@ class BankAccount {
   String getOwnerName() {
     return _0wnerName;
   }
-  
+  void main(){
+    // Creating a BankAccount object
+    BankAccount myAccount = BankAccount(
+      accountNumber: '34584032947',
+      balance: 1000.0,
+      ownerName: 'Rahul Sharma',
+    );
+
+    // Displaying initial account details
+    print('Account Number: ${myAccount.getAccountNumber()}');
+    print('Owner Name: ${myAccount.getOwnerName()}');
+    print('Initial Balance: \$${myAccount.getBalance()}');
+
+    // Depositing money
+    myAccount.deposit(500.0);
+
+    // Withdrawing money
+    myAccount.withdraw(200.0);
+
+    // Trying to withdraw more than the balance
+    myAccount.withdraw(1500.0);
+
+    // Displaying final balance
+    print('Final Balance: \$${myAccount.getBalance()}');
+  }
 
 
 }
