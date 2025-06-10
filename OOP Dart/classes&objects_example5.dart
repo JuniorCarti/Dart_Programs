@@ -10,6 +10,7 @@ class Smartphone {
   double screenSize; // in inches
   int batteryCapacity; // in mAh
   String cameraSpecifications;
+  double price; // in USD
   bool is5GEnabled;
 
   // Constructor to initialize all fields
@@ -23,6 +24,7 @@ class Smartphone {
     required this.batteryCapacity,
     required this.cameraSpecifications,
     required this.is5GEnabled,
+    required this.price,
   });
 
   // Method to display smartphone details
@@ -36,5 +38,23 @@ class Smartphone {
     print('Battery Capacity: $batteryCapacity mAh');
     print('Camera Specifications: $cameraSpecifications');
     print('5G Enabled: ${is5GEnabled ? "Yes" : "No"}');
+  }
+  void main() {
+    // Create an instance of the Smartphone class
+    Smartphone myPhone = Smartphone(
+      brand: 'Samsung',
+      model: 'Galaxy S21',
+      operatingSystem: 'Android 11',
+      storage: 128,
+      ram: 8,
+      screenSize: 6.2,
+      price: 799.99,
+      batteryCapacity: 4000,
+      cameraSpecifications: '64 MP Triple Camera',
+      is5GEnabled: true,
+    );
+
+    // Display the smartphone details
+    myPhone.displayDetails();
   }
 }
