@@ -37,5 +37,6 @@ class LoginProfile {
       lastLogin: DateTime.now(), // Current date and time using DateTime.now() that returns the current date and time
       isActive: true,
     );
+    profile.displayDetails();
   }
 }
