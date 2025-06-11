@@ -7,3 +7,16 @@
 // - @override: An annotation used to indicate that a method is being overridden.
 // - super: Used to call the parent class's method from the child class.
 
+class Laptop {
+  // Parent class
+  void display(){ // Parent class method
+    print("Laptop display method"); // Output: Laptop display method
+  }
+}
+class GamingLaptop extends Laptop {
+  //child class
+  @override // Annotation indicating method overriding
+  void display() { // Overriding the parent class method
+    print("Gaming Laptop display method"); // Output: Gaming Laptop display method
+  }
+}
