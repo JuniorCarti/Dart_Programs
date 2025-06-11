@@ -11,13 +11,12 @@ class Car {
   String brand;
 
   // Parameterized constructor
-  Car({
-    required this.name,
-    required this.color,
-    required this.model,
-    required this.year,
-    required this.brand,
-  });
+  Car({ String name = '', String color = '', String model = '', int year = 0, String brand = '' }) : 
+    name = name,  
+    color = color, 
+    model = model, 
+    year = year, 
+    brand = brand;
 
   // Method to display car details
   void displayDetails() {
@@ -27,4 +26,6 @@ class Car {
     print('Year: $year');
     print('Brand: $brand');
   }
+
+
 }

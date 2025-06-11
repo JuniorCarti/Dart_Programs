@@ -11,9 +11,10 @@ class Laptop {
   String operatingSystem;
   double screenSize; // in inches
   int batteryLife; // in hours
+  int price; // in USD
   bool isTouchscreen;
 
-  // Constructor to initialize all fields
+  // Constructor to initialize all fields //named constructor
   Laptop({
     required this.brand,
     required this.model,
@@ -25,6 +26,7 @@ class Laptop {
     required this.screenSize,
     required this.batteryLife,
     required this.isTouchscreen,
+    required this.price,
   });
 
   // Method to display laptop details
@@ -53,6 +55,7 @@ class Laptop {
       screenSize: 15.6,
       batteryLife: 10,
       isTouchscreen: false,
+      price: 1500,
     );
 
     // Display the laptop details
