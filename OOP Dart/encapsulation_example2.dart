@@ -40,3 +40,23 @@ class Login {
     print('Password: ********'); // Masked password
   }
 }
+void main() {
+  // Creating a Login object
+  Login userLogin = Login(
+    username: 'user123',
+    password: 'securePassword',
+  );
+
+  // Displaying login details
+  userLogin.displayLoginDetails();
+
+  // Validating credentials
+  bool isValid = userLogin.validateCredentials('user123', 'securePassword');
+  print('Credentials valid: $isValid');
+
+  // Changing the password
+  userLogin.changePassword('newSecurePassword');
+  
+  // Displaying updated login details
+  userLogin.displayLoginDetails();
+}
