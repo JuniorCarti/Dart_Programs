@@ -1,0 +1,5 @@
+Benefits of Inheritance
+Code Reusability: Avoid rewriting the same code.
+Method Overriding: Customize behavior in child classes.
+Hierarchical Structure: Organize classes logically (e.g., Animal → Dog, Cat).
+Polymorphism: Treat child classes as parent classes (useful in collections).
