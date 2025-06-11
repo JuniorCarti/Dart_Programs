@@ -21,4 +21,6 @@ class MathUtils {
   static void resetLastCalculatedValue() {
     lastCalculatedValue = 0;
   }
+
+  
 }
