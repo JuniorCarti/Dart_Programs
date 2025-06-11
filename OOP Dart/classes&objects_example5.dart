@@ -39,6 +39,8 @@ class Smartphone {
     print('Camera Specifications: $cameraSpecifications');
     print('5G Enabled: ${is5GEnabled ? "Yes" : "No"}');
   }
+
+}
   void main() {
     // Create an instance of the Smartphone class
     Smartphone myPhone = Smartphone(
@@ -57,4 +59,3 @@ class Smartphone {
     // Display the smartphone details
     myPhone.displayDetails();
   }
-}
