@@ -75,7 +75,9 @@ class House {
   //creating objects
   // This is where we create an instance of the House class and display its details.
   // This function serves as the entry point of the Dart program.
-  void main() {
+ 
+}
+ void main() {
     // Create an instance of the House class
     House myHouse = House(
       address: 'P.o Box 123, Nairobi, Kenya',
@@ -104,4 +106,3 @@ class House {
     // Display the details of the house
     myHouse.displayDetails();
   }
-}
