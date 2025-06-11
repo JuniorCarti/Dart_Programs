@@ -22,3 +22,4 @@ void main() {
   dog.sound(); // Calling method from parent class
   dog.walk(); // Calling method from child class
 }
+
