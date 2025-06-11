@@ -32,6 +32,8 @@ class Clothing {
     print('Available: ${isAvailable ? "Yes" : "No"}');
   }
   
+
+}
   void main() {
     // Create an instance of the Clothing class
     Clothing myClothing = Clothing(
@@ -47,4 +49,3 @@ class Clothing {
     // Display the clothing details
     myClothing.displayDetails();
   }
-}
