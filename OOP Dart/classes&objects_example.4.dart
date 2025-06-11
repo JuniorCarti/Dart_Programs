@@ -1,3 +1,4 @@
+
 //create a class for Laptop
 // lets create a class called Laptop
 class Laptop {
@@ -42,6 +43,8 @@ class Laptop {
     print('Battery Life: $batteryLife hours');
     print('Touchscreen: ${isTouchscreen ? "Yes" : "No"}');
   }
+
+}
   void main() {
     // Create an instance of the Laptop class
     Laptop myLaptop = Laptop(
@@ -61,4 +64,3 @@ class Laptop {
     // Display the laptop details
     myLaptop.displayDetails();
   }
-}

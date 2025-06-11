@@ -26,6 +26,8 @@ class LoginProfile {
     print('Last Login: $lastLogin');
     print('Active Status: ${isActive ? "Active" : "Inactive"}');
   }
+
+}
 // Creating an instance of the LoginProfile class and displaying its details
   void main(){
     // Create an instance of the LoginProfile class
@@ -39,4 +41,3 @@ class LoginProfile {
     );
     profile.displayDetails();
   }
-}
