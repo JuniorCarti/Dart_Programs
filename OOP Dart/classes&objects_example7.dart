@@ -32,7 +32,9 @@ class Course {
     print('Fee: \$$fee');
   }
   
-  void main() {
+ 
+}
+ void main() {
     // Create an instance of the Course class
     Course myCourse = Course(
       courseName: 'Introduction to Dart Programming',
@@ -47,4 +49,3 @@ class Course {
     // Display the course details
     myCourse.displayDetails();
   }
-}
