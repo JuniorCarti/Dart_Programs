@@ -8,4 +8,10 @@
 //extends: The keyword used in Dart to create inheritance.
 //super: Refers to the parent class (used to call parent methods/constructors).
 
-
+//syntax of inheritance in Dart
+class ParentClass {
+// Properties
+}
+class ChildClass extends ParentClass {
+  // Additional properties or methods
+}
