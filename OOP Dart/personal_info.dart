@@ -25,7 +25,11 @@ class PersonalInfo {
     print('Employed: ${isEmployed ? "Yes" : "No"}');
     print('Logged In: ${isLoggedIn ? "Yes" : "No"}');
   }
-  //main method to create an instance of PersonalInfo and display the information
+ 
+  // Display the personal information
+ 
+}
+ //main method to create an instance of PersonalInfo and display the information
   void main() {
     // Create an instance of PersonalInfo
     PersonalInfo person = PersonalInfo(  //we have created an instance of the PersonalInfo class
@@ -36,7 +40,6 @@ class PersonalInfo {
       isEmployed: true,
       isLoggedIn: true,
     );
+    // Display the personal information
+    person.displayInfo();
   }
-  // Display the personal information
- 
-}
