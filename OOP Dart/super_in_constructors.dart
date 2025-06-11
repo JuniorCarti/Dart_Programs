@@ -11,7 +11,20 @@ class Company {
     print("Company: $name, Established: $establishedYear");
   }
 }
+
 class TechCompany extends Company {
   String techFocus;
 
   // Child class constructor
+  TechCompany(String name, int establishedYear, this.techFocus)
+    : super(name, establishedYear) {
+    print("Tech Company: $name, Focus: $techFocus");
+  }
+}
+void main() {
+  // Creating an instance of the TechCompany class
+  TechCompany techCompany = TechCompany("Tech Innovations", 2005, "AI and Robotics");
+  // Output:
+  // Company: Tech Innovations, Established: 2005
+  // Tech Company: Tech Innovations, Focus: AI and Robotics
+}
