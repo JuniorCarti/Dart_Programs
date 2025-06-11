@@ -26,6 +26,17 @@ class Car {
     print('Year: $year');
     print('Brand: $brand');
   }
+}
+void main() {
+  // Creating an object using the parameterized constructor
+  Car myCar = Car(
+    name: 'Model S',
+    color: 'Red',
+    model: '2023',
+    year: 2023,
+    brand: 'Tesla',
+  );
 
-
+  // Displaying car details
+  myCar.displayDetails();
 }
