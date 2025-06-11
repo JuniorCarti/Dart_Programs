@@ -65,7 +65,11 @@ class BankAccount {
     return _bankName;
   }
 
-  void main(){
+ 
+
+}
+
+void main(){
     // Creating a BankAccount object
     BankAccount myAccount = BankAccount(
       accountNumber: '34584032947',
@@ -91,7 +95,4 @@ class BankAccount {
 
     // Displaying final balance
     print('Final Balance: \$${myAccount.getBalance()}');
-  }
-
-
 }
