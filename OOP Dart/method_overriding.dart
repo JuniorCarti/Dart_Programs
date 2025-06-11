@@ -20,3 +20,8 @@ class GamingLaptop extends Laptop {
     print("Gaming Laptop display method"); // Output: Gaming Laptop display method
   }
 }
+void main() {
+  GamingLaptop gamingLaptop = GamingLaptop(); // Creating an instance of the child class
+  gamingLaptop.display(); // Calling the overridden method from the child class
+  // Output: Gaming Laptop display method
+}
