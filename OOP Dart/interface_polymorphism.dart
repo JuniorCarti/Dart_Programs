@@ -30,3 +30,16 @@ class BankTransferProcessor implements PaymentProcessor { // Class implementing 
     print("Processing payment of \$${amount} through Bank Transfer.");
   }
 }
+void main() {
+  // Creating instances of different payment processors
+  PaymentProcessor paypal = PayPalProcessor();
+  PaymentProcessor stripe = StripeProcessor();
+  PaymentProcessor mpesa = MpesaProcessor();
+  PaymentProcessor bankTransfer = BankTransferProcessor();
+
+  // Processing payments using different processors
+  paypal.processPayment(100.0); // Outputs: Processing payment of $100.0 through PayPal.
+  stripe.processPayment(200.0); // Outputs: Processing payment of $200.0 through Stripe.
+  mpesa.processPayment(150.0); // Outputs: Processing payment of $150.0 through M-Pesa.
+  bankTransfer.processPayment(300.0); // Outputs: Processing payment of $300.0 through Bank Transfer.
+}
