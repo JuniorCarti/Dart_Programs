@@ -27,3 +27,16 @@ class InAppNotification implements NotificationService {
     print("Sending In-App Notification: $message");
   }
 }
+void main() {
+  // Creating instances of different notification services
+  NotificationService email = EmailNotification();
+  NotificationService sms = SMSNotification();
+  NotificationService push = PushNotification();
+  NotificationService inApp = InAppNotification();
+
+  // Sending notifications using different services
+  email.sendNotification("Welcome to our service!"); // Outputs: Sending Email Notification: Welcome to our service!
+  sms.sendNotification("Your verification code is 123456"); // Outputs: Sending SMS Notification: Your verification code is 123456
+  push.sendNotification("You have a new message!"); // Outputs: Sending Push Notification: You have a new message!
+  inApp.sendNotification("New feature available in the app!"); // Outputs: Sending In-App Notification: New feature available in the app!
+}
