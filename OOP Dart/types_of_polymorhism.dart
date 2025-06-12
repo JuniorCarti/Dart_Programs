@@ -31,3 +31,12 @@ class HighSchoolStudent extends Student {
     print("High school student is studying high school subjects");
   }
 }
+void main() {
+  Student student1 = GraduateStudent(); // Upcasting
+  Student student2 = UndergraduateStudent(); // Upcasting
+  Student student3 = HighSchoolStudent(); // Upcasting
+  
+  student1.study(); // Outputs: Graduate student is studying advanced topics
+  student2.study(); // Outputs: Undergraduate student is studying basic topics
+  student3.study(); // Outputs: High school student is studying high school subjects
+}
