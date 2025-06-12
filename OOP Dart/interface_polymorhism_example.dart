@@ -14,3 +14,13 @@ class MySQLDatabase implements Database {
     print("Disconnecting from MySQL database...");
   }
 }
+class MongoDBDatabase implements Database {
+  @override
+  void connect() {
+    print("Connecting to MongoDB database...");
+  }
+  @override
+  void disconnect() {
+    print("Disconnecting from MongoDB database...");
+  }
+}
