@@ -9,3 +9,9 @@ class EmailNotification implements NotificationService {
     print("Sending Email Notification: $message");
   }
 }
+class SMSNotification implements NotificationService {
+  @override
+  void sendNotification(String message) {
+    print("Sending SMS Notification: $message");
+  }
+}
