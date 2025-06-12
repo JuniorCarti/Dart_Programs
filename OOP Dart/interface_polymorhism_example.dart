@@ -34,3 +34,13 @@ class PostgreSQLDatabase implements Database {
     print("Disconnecting from PostgreSQL database...");
   }
 }
+class SQLiteDatabase implements Database {
+  @override
+  void connect() {
+    print("Connecting to SQLite database...");
+  }
+  @override
+  void disconnect() {
+    print("Disconnecting from SQLite database...");
+  }
+}
