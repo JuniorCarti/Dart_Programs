@@ -4,3 +4,9 @@
 //example is driving a car
 //You only need to know how to use the steering wheel, pedals, and gears (abstraction).
 //You don’t need to know how the engine, transmission, or ECU works (hidden implementation).
+//Dart supports abstraction through abstract classes and interfaces and mixins.
+//example of abstraction in Dart
+abstract class Vehicle {
+  void start(); // Abstract method to start the vehicle
+  void stop(); // Abstract method to stop the vehicle
+}
