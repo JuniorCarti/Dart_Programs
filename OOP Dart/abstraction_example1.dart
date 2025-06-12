@@ -5,12 +5,12 @@ abstract class TrafficLightState {
 }
 
 // Hidden Implementations
-class RedLight implements TrafficLightState {
+class RedLight implements TrafficLightState { // Represents the RED light state
   @override
-  void changeState() => print("Switching to GREEN after 60s timer");
+  void changeState() => print("Switching to GREEN after 60s timer"); // Internal timer logic hidden
   
   @override
-  String getCurrentLight() => "RED";
+  String getCurrentLight() => "RED"; // Returns the current light state
 }
 
 class GreenLight implements TrafficLightState {
