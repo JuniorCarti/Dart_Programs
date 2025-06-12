@@ -7,4 +7,9 @@
 // Runtime polymorphism is achieved through method overriding,
 //where a subclass provides a specific implementation of a method that is already defined in its superclass.
 // In Dart, polymorphism is primarily achieved through method overriding.
-
+//example of runtime polymorphism
+class Student {
+  void study() {
+    print("Student is studying");
+  }
+}
