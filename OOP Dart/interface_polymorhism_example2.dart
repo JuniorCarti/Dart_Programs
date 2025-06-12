@@ -21,3 +21,9 @@ class PushNotification implements NotificationService {
     print("Sending Push Notification: $message");
   }
 }
+class InAppNotification implements NotificationService {
+  @override
+  void sendNotification(String message) {
+    print("Sending In-App Notification: $message");
+  }
+}
