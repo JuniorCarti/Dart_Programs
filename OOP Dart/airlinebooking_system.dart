@@ -31,10 +31,10 @@ void main() {
   KenyaAirwaysBookingSystem internationalBooking = InternationalAirlineBooking();
 
   // Booking flights
-  domesticBooking.bookFlight("KQ123", "John Doe"); // Outputs: Domestic flight KQ123 booked for John Doe.
-  internationalBooking.bookFlight("KQ456", "Jane Smith"); // Outputs: International flight KQ456 booked for Jane Smith.
+  domesticBooking.bookFlight("KQ123", "Tash Rian"); // Outputs: Domestic flight KQ123 booked for John Doe.
+  internationalBooking.bookFlight("KQ456", "Ridge Junior"); // Outputs: International flight KQ456 booked for Jane Smith.
 
   // Canceling flights
-  domesticBooking.cancelFlight("KQ123", "John Doe"); // Outputs: Domestic flight KQ123 canceled for John Doe.
-  internationalBooking.cancelFlight("KQ456", "Jane Smith"); // Outputs: International flight KQ456 canceled for Jane Smith.
+  domesticBooking.cancelFlight("KQ123", "Kim Son Miung"); // Outputs: Domestic flight KQ123 canceled for John Doe.
+  internationalBooking.cancelFlight("KQ456", "Erling Haaland"); // Outputs: International flight KQ456 canceled for Jane Smith.
 }
