@@ -25,3 +25,9 @@ class UndergraduateStudent extends Student {
     print("Undergraduate student is studying basic topics");
   }
 }
+class HighSchoolStudent extends Student {
+  @override
+  void study() { // Overriding the study method
+    print("High school student is studying high school subjects");
+  }
+}
