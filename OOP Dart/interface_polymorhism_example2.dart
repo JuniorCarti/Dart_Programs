@@ -3,3 +3,9 @@
 abstract class NotificationService {
   void sendNotification(String message); // Method to send a notification
 }
+class EmailNotification implements NotificationService {
+  @override
+  void sendNotification(String message) {
+    print("Sending Email Notification: $message");
+  }
+}
