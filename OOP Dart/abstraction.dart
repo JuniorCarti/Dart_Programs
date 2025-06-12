@@ -56,3 +56,12 @@ void main() {
   truck.start(); // Output: Truck is starting...
   truck.stop(); // Output: Truck is stopping...
 }
+// This example demonstrates abstraction in Dart using abstract classes.
+// The `Vehicle` class is an abstract class that defines the interface for vehicles,
+// while the `Car`, `Bike`, and `Truck` classes provide specific implementations of the abstract methods.
+// This allows you to work with different types of vehicles without needing to know their internal details.
+// Abstraction helps in reducing complexity and improving code maintainability by hiding the implementation details.
+// You can create more vehicle types by extending the `Vehicle` class and implementing the abstract methods.
+// This way, you can easily add new vehicle types without modifying the existing code.
+// You can also use interfaces in Dart to achieve abstraction.
+// An interface in Dart is defined using an abstract class with no implementation.
