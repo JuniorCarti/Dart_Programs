@@ -24,3 +24,13 @@ class MongoDBDatabase implements Database {
     print("Disconnecting from MongoDB database...");
   }
 }
+class PostgreSQLDatabase implements Database {
+  @override
+  void connect() {
+    print("Connecting to PostgreSQL database...");
+  }
+  @override
+  void disconnect() {
+    print("Disconnecting from PostgreSQL database...");
+  }
+}
