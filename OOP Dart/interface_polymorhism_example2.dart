@@ -15,3 +15,9 @@ class SMSNotification implements NotificationService {
     print("Sending SMS Notification: $message");
   }
 }
+class PushNotification implements NotificationService {
+  @override
+  void sendNotification(String message) {
+    print("Sending Push Notification: $message");
+  }
+}
