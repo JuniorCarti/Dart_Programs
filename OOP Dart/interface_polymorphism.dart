@@ -18,3 +18,9 @@ class StripeProcessor implements PaymentProcessor { // Class implementing the Pa
     print("Processing payment of \$${amount} through Stripe.");
   }
 }
+class MpesaProcessor implements PaymentProcessor { // Class implementing the PaymentProcessor interface
+  @override
+  void processPayment(double amount) { // Implementation of the processPayment method for M-Pesa
+    print("Processing payment of \$${amount} through M-Pesa.");
+  }
+}
