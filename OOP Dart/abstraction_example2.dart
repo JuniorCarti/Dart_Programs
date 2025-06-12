@@ -3,27 +3,27 @@
 abstract class MobilePayment {
   void makePayment(double amount); // Abstract method to make a payment
 }
-class PayPalPayment implements MobilePayment {
+class PayPalPayment implements MobilePayment { // Implementation of the MobilePayment interface for PayPal
   @override
-  void makePayment(double amount) {
+  void makePayment(double amount) { // Implementation of the makePayment method for PayPal
     print("Processing payment of \$${amount} through PayPal.");
   }
 }
-class StripePayment implements MobilePayment {
+class StripePayment implements MobilePayment { // Implementation of the MobilePayment interface for Stripe
   @override
-  void makePayment(double amount) {
+  void makePayment(double amount) { //
     print("Processing payment of \$${amount} through Stripe.");
   }
 }
-class MpesaPayment implements MobilePayment {
+class MpesaPayment implements MobilePayment { // Implementation of the MobilePayment interface for M-Pesa
   @override
-  void makePayment(double amount) {
+  void makePayment(double amount) { // Implementation of the makePayment method for M-Pesa
     print("Processing payment of \$${amount} through M-Pesa.");
   }
 }
-class BankTransferPayment implements MobilePayment {
+class BankTransferPayment implements MobilePayment { // Implementation of the MobilePayment interface for Bank Transfer
   @override
-  void makePayment(double amount) {
+  void makePayment(double amount) { // Implementation of the makePayment method for Bank Transfer
     print("Processing payment of \$${amount} through Bank Transfer.");
   }
 }
