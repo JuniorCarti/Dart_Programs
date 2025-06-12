@@ -9,7 +9,19 @@
 // In Dart, polymorphism is primarily achieved through method overriding.
 //example of runtime polymorphism
 class Student {
-  void study() {
+  void study() { // This method can be overridden in subclasses
     print("Student is studying");
+  }
+}
+class GraduateStudent extends Student {
+  @override
+  void study() { // Overriding the study method
+    print("Graduate student is studying advanced topics");
+  }
+}
+class UndergraduateStudent extends Student {
+  @override
+  void study() { // Overriding the study method
+    print("Undergraduate student is studying basic topics");
   }
 }
