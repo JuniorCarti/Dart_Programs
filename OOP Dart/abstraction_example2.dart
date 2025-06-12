@@ -9,3 +9,15 @@ class PayPalPayment implements MobilePayment {
     print("Processing payment of \$${amount} through PayPal.");
   }
 }
+class StripePayment implements MobilePayment {
+  @override
+  void makePayment(double amount) {
+    print("Processing payment of \$${amount} through Stripe.");
+  }
+}
+class MpesaPayment implements MobilePayment {
+  @override
+  void makePayment(double amount) {
+    print("Processing payment of \$${amount} through M-Pesa.");
+  }
+}
