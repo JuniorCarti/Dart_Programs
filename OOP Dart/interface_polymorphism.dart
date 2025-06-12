@@ -24,3 +24,9 @@ class MpesaProcessor implements PaymentProcessor { // Class implementing the Pay
     print("Processing payment of \$${amount} through M-Pesa.");
   }
 }
+class BankTransferProcessor implements PaymentProcessor { // Class implementing the PaymentProcessor interface
+  @override
+  void processPayment(double amount) { // Implementation of the processPayment method for Bank Transfer
+    print("Processing payment of \$${amount} through Bank Transfer.");
+  }
+}
