@@ -11,3 +11,11 @@ mixin mixinName {
     print("This is a method from the mixin.");
   }
 }
+// Applying a mixin to a class
+class MyClass with mixinName { // MyClass is a class that uses the mixinName mixin , 
+//uses keyword `with` to apply the mixin
+  // MyClass can use the properties and methods of mixinName
+  void myClassMethod() {
+    print("This is a method from MyClass.");
+  }
+}
