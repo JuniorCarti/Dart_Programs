@@ -20,3 +20,10 @@ class ProductService with Logger {
     // Logic to add product
   }
 }
+// Order Service class using Logger mixin
+class OrderService with Logger {
+  void createOrder(String orderId) {
+    log("Creating order: $orderId");
+    // Logic to create order
+  }
+}
