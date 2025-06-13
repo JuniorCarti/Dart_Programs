@@ -19,3 +19,26 @@ class MyClass with mixinName { // MyClass is a class that uses the mixinName mix
     print("This is a method from MyClass.");
   }
 }
+// Define AnotherMixin before using it
+mixin AnotherMixin {
+  void anotherMixinMethod() {
+    print("This is a method from AnotherMixin.");
+  }
+}
+mixin AnotherMixin2 {
+  void anotherMixin2Method() {
+    print("This is a method from AnotherMixin2.");
+  }
+}
+mixin AnotherMixin3 {
+  void anotherMixin3Method() {
+    print("This is a method from AnotherMixin3.");
+  }
+}
+
+//multiple mixins can be applied to a class
+class AnotherClass with mixinName, AnotherMixin, AnotherMixin2, AnotherMixin3 { // AnotherClass uses multiple mixins
+  void anotherClassMethod() {
+    print("This is a method from AnotherClass.");
+  }
+}
