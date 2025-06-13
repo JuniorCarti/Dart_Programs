@@ -38,4 +38,15 @@ class PayPalPayment with CardValidation, EmailNotification, PaymentProcessing, P
     }
   }
 }
+class StripePayment with CardValidation, SmsNotification, PaymentProcessing, PaymentReceipt {
+  void makePayment(String cardNumber, String phoneNumber, double amount) {
+    if (validateCard(cardNumber)) {
+      processPayment(amount);
+      sendSmsNotification(phoneNumber, "Your payment of \$${amount} has been processed successfully.");
+      sendReceipt(phoneNumber, amount);
+    } else {
+      print("Invalid card number.");
+    }
+  }
+}
 
