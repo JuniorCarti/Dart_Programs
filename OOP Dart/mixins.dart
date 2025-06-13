@@ -5,3 +5,9 @@
 //mixins allow a class to inherit properties and methods from multiple classes without using traditional inheritance
 //inheritance is a one-to-one relationship, while mixins allow for a one-to-many relationship
 //defining a mixin in Dart
+mixin mixinName {
+  // Properties and methods of the mixin
+  void mixinMethod() {
+    print("This is a method from the mixin.");
+  }
+}
