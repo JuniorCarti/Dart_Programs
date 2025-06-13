@@ -12,3 +12,19 @@ mixin EmailNotification {
     print("Sending email to $email: ${message}");
   }
 }
+mixin SmsNotification {
+  void sendSmsNotification(String phoneNumber, String message) {
+    print("Sending SMS to $phoneNumber: ${message}");
+  }
+}
+mixin PaymentProcessing {
+  void processPayment(double amount) {
+    print("Processing payment of \$${amount}.");
+  }
+}
+mixin PaymentReceipt {
+  void sendReceipt(String email, double amount) {
+    print("Sending receipt to $email for payment of \$${amount}.");
+  }
+}
+
