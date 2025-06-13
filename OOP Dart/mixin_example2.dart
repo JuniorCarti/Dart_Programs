@@ -7,3 +7,8 @@ mixin CardValidation {
     return cardNumber.length == 16;
   }
 }
+mixin EmailNotification {
+  void sendEmailNotification(String email, String message) {
+    print("Sending email to $email: ${message}");
+  }
+}
