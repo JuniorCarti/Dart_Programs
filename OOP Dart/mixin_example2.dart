@@ -49,4 +49,11 @@ class StripePayment with CardValidation, SmsNotification, PaymentProcessing, Pay
     }
   }
 }
+class MpesaPayment with SmsNotification, PaymentProcessing, PaymentReceipt {
+  void makePayment(String phoneNumber, double amount) {
+    processPayment(amount);
+    sendSmsNotification(phoneNumber, "Your payment of \$${amount} has been processed successfully.");
+    sendReceipt(phoneNumber, amount);
+  }
+}
 
