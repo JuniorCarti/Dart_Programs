@@ -27,3 +27,19 @@ class OrderService with Logger {
     // Logic to create order
   }
 }
+void main() {
+  UserService userService = UserService(); // Creating an instance of UserService
+  // Using the Logger mixin to log actions
+  userService.createUser("Ridge Junior");
+
+  ProductService productService = ProductService();
+  productService.addProduct("Laptop");
+
+  OrderService orderService = OrderService();
+  orderService.createOrder("ORD12345");
+  
+  // Output:
+  // Log: Creating user: Ridge Junior - 2023-10-01 12:00:00.000
+  // Log: Adding product: Laptop - 2023-10-01 12:00:00.000
+  // Log: Creating order: ORD12345 - 2023-10-01 12:00:00.000
+}
