@@ -27,4 +27,15 @@ mixin PaymentReceipt {
     print("Sending receipt to $email for payment of \$${amount}.");
   }
 }
+class PayPalPayment with CardValidation, EmailNotification, PaymentProcessing, PaymentReceipt {
+  void makePayment(String cardNumber, String email, double amount) {
+    if (validateCard(cardNumber)) {
+      processPayment(amount);
+      sendEmailNotification(email, "Your payment of \$${amount} has been processed successfully.");
+      sendReceipt(email, amount);
+    } else {
+      print("Invalid card number.");
+    }
+  }
+}
 
