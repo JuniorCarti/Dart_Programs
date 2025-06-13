@@ -56,4 +56,11 @@ class MpesaPayment with SmsNotification, PaymentProcessing, PaymentReceipt {
     sendReceipt(phoneNumber, amount);
   }
 }
+class BankTransferPayment with EmailNotification, PaymentProcessing, PaymentReceipt {
+  void makePayment(String email, double amount) {
+    processPayment(amount);
+    sendEmailNotification(email, "Your payment of \$${amount} has been processed successfully.");
+    sendReceipt(email, amount);
+  }
+}
 
