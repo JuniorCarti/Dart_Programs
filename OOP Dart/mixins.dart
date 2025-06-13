@@ -11,14 +11,17 @@ mixin mixinName {
     print("This is a method from the mixin.");
   }
 }
+
 // Applying a mixin to a class
-class MyClass with mixinName { // MyClass is a class that uses the mixinName mixin , 
-//uses keyword `with` to apply the mixin
+class MyClass with mixinName {
+  // MyClass is a class that uses the mixinName mixin ,
+  //uses keyword `with` to apply the mixin
   // MyClass can use the properties and methods of mixinName
   void myClassMethod() {
     print("This is a method from MyClass.");
   }
 }
+
 // Define AnotherMixin before using it
 mixin AnotherMixin {
   void anotherMixinMethod() {
@@ -37,8 +40,29 @@ mixin AnotherMixin3 {
 }
 
 //multiple mixins can be applied to a class
-class AnotherClass with mixinName, AnotherMixin, AnotherMixin2, AnotherMixin3 { // AnotherClass uses multiple mixins
+class AnotherClass with mixinName, AnotherMixin, AnotherMixin2, AnotherMixin3 {
+  // AnotherClass uses multiple mixins
   void anotherClassMethod() {
     print("This is a method from AnotherClass.");
   }
+}
+
+void main() {
+  MyClass myClass = MyClass(); // Creating an instance of MyClass
+  myClass.mixinMethod(); // Calling a method from the mixin
+  myClass.myClassMethod(); // Calling a method from MyClass
+  AnotherClass anotherClass = AnotherClass(); // Creating an instance of AnotherClass
+  anotherClass.mixinMethod(); // Calling a method from the mixin
+  anotherClass.anotherMixinMethod(); // Calling a method from AnotherMixin
+  anotherClass.anotherMixin2Method(); // Calling a method from AnotherMixin2
+  anotherClass.anotherMixin3Method(); // Calling a method from AnotherMixin3
+  anotherClass.anotherClassMethod(); // Calling a method from AnotherClass
+  // Output:
+  // This is a method from the mixin.
+  // This is a method from MyClass.
+  // This is a method from the mixin.
+  // This is a method from AnotherMixin.
+  // This is a method from AnotherMixin2.
+  // This is a method from AnotherMixin3.
+  // This is a method from AnotherClass.
 }
