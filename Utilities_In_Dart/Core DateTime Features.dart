@@ -24,3 +24,9 @@ void main() {
   DateTime lastWeek = now.subtract(Duration(days: 7));
   print('\nTomorrow: $tomorrow');
   print('Last week: $lastWeek');
+
+    // Date comparison
+  print('\nComparison:');
+  print('Is now before tomorrow? ${now.isBefore(tomorrow)}');
+  print('Is now after tomorrow? ${now.isAfter(tomorrow)}');
+  print('Is now at same moment as now? ${now.isAtSameMomentAs(DateTime.now())}');
