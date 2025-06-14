@@ -10,7 +10,7 @@ class Car {
   int year;
   String brand;
 
-  //DEFAULT CONSTRUCTOR , named constructor, Parameterized constructor
+  //DEFAULT CONSTRUCTOR , named constructor, Parameterized constructor, factory constructor
   Car({
     required this.name,
     required this.color,

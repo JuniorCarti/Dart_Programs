@@ -9,7 +9,7 @@ class Person {
     required this.age,
     required this.dateOfBirth,
   });
-
+ 
   void displayDetails() {
     print('Name: $name');
     print('Age: $age');
