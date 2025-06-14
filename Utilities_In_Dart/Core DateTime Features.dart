@@ -7,3 +7,14 @@ void main() {
   print('Current time: $now');
   print('Specific date: $specificDate');
   print('Parsed date: $parsedDate');
+
+   // Access date components
+  print('\nDate components:');
+  print('Year: ${now.year}');
+  print('Month: ${now.month}');
+  print('Day: ${now.day}');
+  print('Hour: ${now.hour}');
+  print('Minute: ${now.minute}');
+  print('Second: ${now.second}');
+  print('Millisecond: ${now.millisecond}');
+  print('Weekday: ${now.weekday}'); // 1 (Monday) to 7 (Sunday)
