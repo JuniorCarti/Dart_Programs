@@ -18,3 +18,9 @@ void main() {
   print('Second: ${now.second}');
   print('Millisecond: ${now.millisecond}');
   print('Weekday: ${now.weekday}'); // 1 (Monday) to 7 (Sunday)
+
+  // Date manipulation
+  DateTime tomorrow = now.add(Duration(days: 1));
+  DateTime lastWeek = now.subtract(Duration(days: 7));
+  print('\nTomorrow: $tomorrow');
+  print('Last week: $lastWeek');
