@@ -28,6 +28,9 @@ void main(){
   DateTime EATNow = DateTime.now().toUtc().add(Duration(hours: 3)); // East Africa Time (EAT) is UTC+3
   print("Current date and time in East Africa Time (EAT): $EATNow");
 
+  DateTime ISTNow = DateTime.now().toUtc().add(Duration(hours: 5, minutes: 30)); // Indian Standard Time (IST) is UTC+5:30
+  print("Current date and time in Indian Standard Time (IST): $ISTNow");
+
   // Get the current date and time in a specific timezone (e.g., New York)
   // Note: Dart does not have built-in timezone support, so you may need to use a package like 'timezone'
   // For demonstration, we'll just show the local time
