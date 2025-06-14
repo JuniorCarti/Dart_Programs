@@ -4,7 +4,7 @@ void startCountdown(DateTime targetDate) {
   Timer.periodic(Duration(seconds: 1), (timer) {
     Duration remaining = targetDate.difference(DateTime.now());
     if (remaining.isNegative) {
-      print('Countdown finished!');
+      print('Welcome to New Year 2025!');
       timer.cancel();
     } else {
       print('Time remaining: ${remaining.inHours}h '
@@ -15,6 +15,6 @@ void startCountdown(DateTime targetDate) {
 }
 
 void main() {
-  // Start countdown for 5 minutes from now
-  startCountdown(DateTime.now().add(Duration(minutes: 5)));
+  // Start countdown for 40 seconds from now
+  startCountdown(DateTime.now().add(Duration(seconds: 40)));
 }
