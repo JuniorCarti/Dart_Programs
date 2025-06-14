@@ -14,5 +14,7 @@ void startCountdown(DateTime targetDate) {
   });
 }
 
-// Usage:
-// startCountdown(DateTime.now().add(Duration(minutes: 5)));
+void main() {
+  // Start countdown for 5 minutes from now
+  startCountdown(DateTime.now().add(Duration(minutes: 5)));
+}
