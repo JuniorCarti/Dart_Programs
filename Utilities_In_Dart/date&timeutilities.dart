@@ -4,19 +4,19 @@
 //meaning of the date and time in a specific timezone?
 //Dart's DateTime class provides comprehensive functionality for working with dates and times.
 // It includes methods for parsing, formatting, and manipulating date and time values.
-// The DateTime class is immutable, meaning that any operation that modifies a 
+// The DateTime class is immutable, meaning that any operation that modifies a
 //date and time value returns a new instance.
-// The DateTime class supports both UTC and local time zones, allowing for 
+// The DateTime class supports both UTC and local time zones, allowing for
 //flexible date and time handling.
 // The DateTime class can be used to perform arithmetic operations on dates and times,
-// such as adding or subtracting durations, comparing dates, and extracting components 
+// such as adding or subtracting durations, comparing dates, and extracting components
 //like year, month, day, hour, minute, and second.
 // The DateTime class can be used to format dates and times in various ways,
 // including custom formats and localized representations.
 // The DateTime class can be used to parse date and time strings in various formats,
 // including ISO 8601 and custom formats.
 //core date time features
-void main(){
+void main() {
   // Get the current date and time
   DateTime now = DateTime.now(); //
   print("Current date and time: $now");
@@ -25,14 +25,24 @@ void main(){
   DateTime utcNow = DateTime.now().toUtc();
   print("Current date and time in UTC: $utcNow");
 
-  DateTime EATNow = DateTime.now().toUtc().add(Duration(hours: 3)); // East Africa Time (EAT) is UTC+3
+  DateTime EATNow = DateTime.now().toUtc().add(
+    Duration(hours: 3),
+  ); // East Africa Time (EAT) is UTC+3
   print("Current date and time in East Africa Time (EAT): $EATNow");
 
-  DateTime ISTNow = DateTime.now().toUtc().add(Duration(hours: 5, minutes: 30)); // Indian Standard Time (IST) is UTC+5:30
+  DateTime ISTNow = DateTime.now().toUtc().add(
+    Duration(hours: 5, minutes: 30),
+  ); // Indian Standard Time (IST) is UTC+5:30
   print("Current date and time in Indian Standard Time (IST): $ISTNow");
 
-  DateTime JSTNow = DateTime.now().toUtc().add(Duration(hours: 9)); // Japan Standard Time (JST) is UTC+9
+  DateTime JSTNow = DateTime.now().toUtc().add(
+    Duration(hours: 9),
+  ); // Japan Standard Time (JST) is UTC+9
   print("Current date and time in Japan Standard Time (JST): $JSTNow");
+
+  DateTime GMTNow =
+      DateTime.now().toUtc(); // Greenwich Mean Time (GMT) is UTC+0
+  print("Current date and time in Greenwich Mean Time (GMT): $GMTNow");
 
   // Get the current date and time in a specific timezone (e.g., New York)
   // Note: Dart does not have built-in timezone support, so you may need to use a package like 'timezone'
@@ -41,7 +51,8 @@ void main(){
   print("Current date and time in local timezone: $localNow");
 
   // Format the date and time
-  String formattedDate = "${now.year}-${now.month}-${now.day} ${now.hour}:${now.minute}:${now.second}";
+  String formattedDate =
+      "${now.year}-${now.month}-${now.day} ${now.hour}:${now.minute}:${now.second}";
   print("Formatted date and time: $formattedDate");
 
   // Parse a date string
@@ -49,5 +60,3 @@ void main(){
   DateTime parsedDate = DateTime.parse(dateString);
   print("Parsed date: $parsedDate");
 }
-
-
