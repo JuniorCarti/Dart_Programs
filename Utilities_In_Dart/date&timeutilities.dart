@@ -43,6 +43,7 @@ void main() {
   DateTime GMTNow =
       DateTime.now().toUtc(); // Greenwich Mean Time (GMT) is UTC+0
   print("Current date and time in Greenwich Mean Time (GMT): $GMTNow");
+  
 
   // Get the current date and time in a specific timezone (e.g., New York)
   // Note: Dart does not have built-in timezone support, so you may need to use a package like 'timezone'
