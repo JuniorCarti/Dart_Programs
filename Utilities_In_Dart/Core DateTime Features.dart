@@ -30,3 +30,11 @@ void main() {
   print('Is now before tomorrow? ${now.isBefore(tomorrow)}');
   print('Is now after tomorrow? ${now.isAfter(tomorrow)}');
   print('Is now at same moment as now? ${now.isAtSameMomentAs(DateTime.now())}');
+
+   // Difference between dates
+  Duration difference = tomorrow.difference(now);
+  print('\nTime until tomorrow:');
+  print('Total hours: ${difference.inHours}');
+  print('Total minutes: ${difference.inMinutes}');
+  print('Human readable: ${difference.toString()}');
+}
