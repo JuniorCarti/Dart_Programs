@@ -39,9 +39,14 @@ void main() {
   print(numbers);
 
   //advanced operations
-  print(numbers.fold<int>(0, (int sum, int n) => sum + n)); // 29 (sum with initial value)
+  print(
+    numbers.fold<int>(0, (int sum, int n) => sum + n),
+  ); // 29 (sum with initial value)
   print(numbers.any((n) => n > 5)); // true
   print(numbers.every((n) => n > 5)); // false
   print(numbers.take(3)); // (0, 2, 2)
   print(numbers.skip(4)); // (4, 5, 6, 7)
+
+  List<int> moreNumbers = [...numbers, 8, 9, 10, 11, 12, 13];
+  print(moreNumbers);
 }
