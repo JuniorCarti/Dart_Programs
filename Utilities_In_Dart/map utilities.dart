@@ -5,4 +5,6 @@ void main() {
 
   print(ages["Alice"]);
   print(ages['Njenga']);
+  print(ages.containsKey('Kimberly'));
+  print(ages.containsValue(90));
 }
