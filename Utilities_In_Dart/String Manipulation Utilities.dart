@@ -9,4 +9,6 @@ void main() {
   print(message.contains("Dart"));
   print(message.startsWith("Hello"));
   print(message.endsWith("Hello"));
+  print(message.endsWith("!"));
+  print(message.startsWith(","));
 }
