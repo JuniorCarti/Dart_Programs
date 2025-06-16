@@ -17,4 +17,9 @@ void main() {
   //substrings
   print(message.substring(7));
   print(message.substring(0, 7));
+
+  //splitting and joining
+  print(message.split(","));
+  print(["Hello", "Dart"].join(" "));
+  
 }
