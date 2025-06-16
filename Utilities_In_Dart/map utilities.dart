@@ -7,4 +7,12 @@ void main() {
   print(ages['Njenga']);
   print(ages.containsKey('Kimberly'));
   print(ages.containsValue(90));
+
+  //modifiying
+  ages['Aaaron'] = 23;
+  ages.update('Alice', (ages) => ages + 5);
+  ages.remove('Njenga');
+
+  print(ages['Alice']);
+  print(ages);
 }
