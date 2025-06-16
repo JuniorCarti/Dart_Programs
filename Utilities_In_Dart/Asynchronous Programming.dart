@@ -10,3 +10,9 @@
 //Synchronous Code:
 //Code is executed line by line.
 //Each task waits for the previous one to finish.
+void main() {
+  print("Start");
+  print("Processing...");
+  print("End");
+}
+
