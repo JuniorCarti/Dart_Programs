@@ -7,4 +7,6 @@ void main() {
 
   //searching
   print(message.contains("Dart"));
+  print(message.startsWith("Hello"));
+  print(message.endsWith("Hello"));
 }
