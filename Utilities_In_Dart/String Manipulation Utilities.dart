@@ -27,4 +27,8 @@ void main() {
   print(spaced.trim());
   print(spaced.trimLeft());
   print(spaced.trimRight());
+
+  //padding
+  print('5'.padLeft(3, '0'));
+  print('5'.padRight(3, '0'));
 }
