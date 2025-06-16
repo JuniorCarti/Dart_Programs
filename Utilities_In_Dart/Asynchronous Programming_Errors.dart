@@ -14,7 +14,7 @@ void main() async {
 
   try {
     // Change the argument to `false` to simulate failure
-    String response = await fetchUserData(false); 
+    String response = await fetchUserData(false);
     print(response);
   } catch (e) {
     print("Caught an error: $e");
@@ -22,4 +22,3 @@ void main() async {
 
   print("Program continues...");
 }
-
