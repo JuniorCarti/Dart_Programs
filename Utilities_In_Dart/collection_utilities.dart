@@ -31,5 +31,6 @@ void main() {
   //➕ 3. reduce() – Reduce to a Single Value
   //reduce() combines elements into one single value, such as a sum or max.
   print(numbers.reduce((a, b) => a + b)); // 29 (sum)
+  print(numbers.reduce((a, b) => a - b));
   print(List);
 }
