@@ -1,0 +1,5 @@
+void main() {
+  //map operations
+  Map<String, int> ages = {'Alice': 20, 'Njenga': 30, 'Kimberly': 18};
+  //Accessing the map
+}
