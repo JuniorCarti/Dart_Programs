@@ -13,5 +13,8 @@ void main() {
   print(message.startsWith(","));
   print(message.indexOf("Hello"));
   print(message.indexOf("Dart"));
-  
+
+  //substrings
+  print(message.substring(7));
+  print(message.substring(0, 7));
 }
