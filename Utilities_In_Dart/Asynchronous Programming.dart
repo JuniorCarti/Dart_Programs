@@ -6,3 +6,7 @@
 //Reading/writing files
 //Waiting for user input
 //Making API requests
+
+//Synchronous Code:
+//Code is executed line by line.
+//Each task waits for the previous one to finish.
