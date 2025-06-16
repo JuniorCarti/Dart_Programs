@@ -31,4 +31,12 @@ void main() {
   //padding
   print('5'.padLeft(3, '0'));
   print('5'.padRight(3, '0'));
+
+  //replacement
+  print(message.replaceAll("Ridge", "Welcome"));
+
+    // Regular expressions
+  var regExp = RegExp(r'\bDart\b');
+  print(regExp.hasMatch(message)); // true
+  print(message.replaceFirst(regExp, 'Flutter')); // "Hello, Flutter!"
 }
