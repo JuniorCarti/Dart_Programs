@@ -4,4 +4,7 @@ void main() {
   print(message.length);
   print(message.toUpperCase());
   print(message.toLowerCase());
+
+  //searching
+  print(message.contains("Dart"));
 }
