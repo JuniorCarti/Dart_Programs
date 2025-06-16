@@ -1,0 +1,1 @@
+//Enhanced enums (with fields, constructors, methods)
