@@ -1,3 +1,5 @@
-void main(){
+void main() {
   //Basic operations
+  String message = "Hello, Dart!";
+  print(message.length);
 }
