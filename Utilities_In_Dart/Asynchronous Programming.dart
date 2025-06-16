@@ -14,5 +14,16 @@ void main() {
   print("Start");
   print("Processing...");
   print("End");
+
+//Asynchronous Code:
+//Code doesn't wait for tasks to finish.
+//It can continue with other operations while a task is still running in the background.
+
+
+//1. Future: Represents a value that will be available in the future.
+Future<String> fetchData() {
+  return Future.delayed(Duration(seconds: 2), () => 'Data loaded');
+}
+
 }
 
