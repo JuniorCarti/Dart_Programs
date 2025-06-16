@@ -15,4 +15,16 @@ void main() {
 
   print(ages['Alice']);
   print(ages);
+
+   // Iterating
+  ages.forEach((name, age) => print('$name is $age years old'));
+  
+  // Transformation
+  print(ages.map((name, age) => MapEntry(name, age + 1)));
+  print(ages.keys.where((name) => name.length > 3));
+
+    // Merging maps
+  Map<String, int> moreAges = {'Eve': 27, 'Frank': 35};
+  Map<String, int> allAges = {...ages, ...moreAges};
+  print(allAges);
 }
