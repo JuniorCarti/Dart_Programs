@@ -11,4 +11,7 @@ void main() {
   print(message.endsWith("Hello"));
   print(message.endsWith("!"));
   print(message.startsWith(","));
+  print(message.indexOf("Hello"));
+  print(message.indexOf("Dart"));
+  
 }
