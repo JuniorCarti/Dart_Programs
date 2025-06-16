@@ -9,4 +9,8 @@ void main() {
   //querring
 
   print(numbers);
+  print(numbers.first); // 0
+  print(numbers.last); // 8
+  print(numbers.isEmpty); // false
+  print(numbers.isNotEmpty); // true
 }
