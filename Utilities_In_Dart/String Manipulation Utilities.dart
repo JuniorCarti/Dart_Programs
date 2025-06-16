@@ -21,5 +21,10 @@ void main() {
   //splitting and joining
   print(message.split(","));
   print(["Hello", "Dart"].join(" "));
-  
+
+  //Trimming
+  String spaced = " trim me ";
+  print(spaced.trim());
+  print(spaced.trimLeft());
+  print(spaced.trimRight());
 }
