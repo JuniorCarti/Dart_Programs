@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_create_mywallet/screens/pages/pay_bill.dart';
-import 'package:flutter_create_mywallet/screens/pages/transfer.dart';
 
 class Homecontent extends StatelessWidget {
   const Homecontent({super.key});
